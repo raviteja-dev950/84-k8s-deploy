@@ -397,7 +397,7 @@ Browser `localhost:3000` returns `{"tier":"9 - DevOps + Cloud","project":"84-k8s
 
 Browser `localhost:9494` returns `{"status":"Docker Ready","project":"83-dockerized-app"}` - Shows Project 83 container still occupies 9494, which caused port-forward conflict - Explains why we used 3000 for K8s.
 
-![Demo 5(screenshots/demo5.png)
+![Demo 5](screenshots/demo5.png)
 
 ---
 
