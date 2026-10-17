@@ -365,7 +365,7 @@ Handling connection for 3000
 
 Pods `k8s-deploy-566985b7c9-qjxfr` and `k8s-deploy-566985b7c9-wdwxq` both `1/1 Running` with `0 Restarts` - 10m AGE - Proof of replica set working.
 
-![screenshots/demo1.png]
+[screenshots/demo1.png]
 
 ---
 
@@ -373,7 +373,7 @@ Pods `k8s-deploy-566985b7c9-qjxfr` and `k8s-deploy-566985b7c9-wdwxq` both `1/1 R
 
 Logs `k8s-deploy-566985b7c9-qjxfr --tail=20` - Spring Boot banner v4.1.1 - Java 21.0.12.1 PID 1 - Tomcat initialized port 9494 - Started in 30.084 seconds.
 
-![screenshots/demo2.png]
+[screenshots/demo2.png]
 
 ---
 
@@ -381,7 +381,7 @@ Logs `k8s-deploy-566985b7c9-qjxfr --tail=20` - Spring Boot banner v4.1.1 - Java 
 
 Logs `deployment/k8s-deploy --tail=30` - Found 2 pods, using pod/k8s-deploy-566985b7c9-qjxfr - Initializing Spring DispatcherServlet + Completed initialization in 30 ms - Proof traffic hits pods.
 
-![screenshots/demo3.png]
+[screenshots/demo3.png]
 
 ---
 
@@ -389,7 +389,7 @@ Logs `deployment/k8s-deploy --tail=30` - Found 2 pods, using pod/k8s-deploy-5669
 
 Browser `localhost:3000` returns `{"tier":"9 - DevOps + Cloud","project":"84-k8s-deploy","status":"K8s Ready"}` - After fixing `bind: Only one usage of each socket address` by using 3000 instead of 9494. Main success proof for Project 84.
 
-![screenshots/demo4.png]
+[screenshots/demo4.png]
 
 ---
 
@@ -397,7 +397,7 @@ Browser `localhost:3000` returns `{"tier":"9 - DevOps + Cloud","project":"84-k8s
 
 Browser `localhost:9494` returns `{"status":"Docker Ready","project":"83-dockerized-app"}` - Shows Project 83 container still occupies 9494, which caused port-forward conflict - Explains why we used 3000 for K8s.
 
-![screenshots/demo5.png]
+[screenshots/demo5.png]
 
 ---
 
@@ -405,7 +405,7 @@ Browser `localhost:9494` returns `{"status":"Docker Ready","project":"83-dockeri
 
 PowerShell `kubectl port-forward svc/k8s-service 3000:9494` - Forwarding from 127.0.0.1:3000 -> 9494 - Handling connection for 3000 x4 - Proof live traffic.
 
-![screenshots/demo6.png]
+[screenshots/demo6.png]
 
 ---
 
